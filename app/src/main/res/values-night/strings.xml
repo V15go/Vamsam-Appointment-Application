@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logo">logo</string>
+    <string name="get_started">Get Started</string>
+    <string name="new_user">New User?</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="age">Age</string>
+    <string name="email_address">Email address</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="hello_name">Hello, Name</string>
+    <string name="latest_appointment">Latest Appointment</string>
+    <string name="your_upcoming_appointment_with">Your Upcoming Appointment with</string>
+    <string name="our_treatments">Our Treatments</string>
+    <string name="our_doctors">Our Doctors</string>
+    <string name="appointment_for">Appointment for</string>
+    <string name="see_all">See all</string>
+    <string name="fix_appointment_with_the_nearest_centre">Fix Appointment with the nearest centre</string>
+    <string name="select_your_nearest_centre">Select Your Nearest Centre</string>
+    <string name="made_with_love_v15go">Made with Love V15go</string>
+    <string name="our_centres">Our Centres</string>
+    <string name="_91_93611_92939">+91 93611-92939</string>
+    <string name="no_17_ramamoorthy_nagar_karur_bypass_rd_tiruchirappalli_620002">No. 17, Ramamoorthy Nagar, Karur Bypass Rd, Tiruchirappalli - 620002</string>
+    <string name="_91_93613_92939">+91 93613-92939</string>
+    <string name="_29_108_coonoor_rd_elk_hill_ooty_tamil_nadu_643001">29, 108, Coonoor Rd, Elk Hill, Ooty, Tamil Nadu 643001</string>
+    <string name="_91_96553_83344">+91 96553-83344</string>
+    <string name="no_12_13_sarojini_st_ranipet_district_arakkonam_631001">No.12, 13, Sarojini St, Ranipet District, Arakkonam - 631001</string>
+    <string name="_91_93601_92939">+91 93601-92939</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="centre_location">Centre Location</string>
+    <string name="swipe"><![CDATA[Swipe >>]]></string>
+    <string name="click_the_centre_to_see_the_appointment_history">Click the centre to see the appointment history</string>
+    <string name="coimbatore">Coimbatore</string>
+    <string name="tirunelveli">Tirunelveli</string>
+    <string name="trichy">Trichy</string>
+    <string name="ooty">Ooty</string>
+    <string name="arakkonam">arakkonam</string>
+    <string name="admin_centre_username">Admin Centre Username</string>
+    <string name="admin_centre_password">Admin centre Password</string>
+    <string name="enter_the_centre_credentials">Enter the Centre Credentials</string>
+    <string name="get_in">get in</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="_91_80982_33344">+91 80982-33344</string>
+    <string name="coimbatore_appointments">Coimbatore Appointments</string>
+    <string name="arakkonam_appointments">Arakkonam Appointments</string>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_appointment_details">
+
+    <TextView
+        android:id="@+id/top_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_design"
+        android:gravity="top"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        >
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/appointment_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+
+            android:fontFamily="sans-serif-black"
+            android:text="@string/appointment_details"
+
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/invest_icon"
+            android:contentDescription="@string/injections_vaccine" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_details"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="@string/name"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name_appoint"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="@string/name"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="20sp"
+
+            android:text="@string/phone_number"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/phone_appoint"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="@string/name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="20sp"
+
+            android:text="@string/appointment_booked_for"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/appointment_for_appoint"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="@string/name"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="20sp"
+
+            android:text="@string/additional_info"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/additional_appoint"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="@string/name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="20sp"
+
+            android:text="@string/centre_location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/doctor_appoint"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="@string/doctor"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:id="@+id/date_appoint"
+
+                android:text="@string/date"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/time_slot"
+                android:layout_marginStart="40dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:id="@+id/time_appoint"
+
+                android:text="@string/time_slot"
+                android:textSize="16sp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_patient_btn"
+            android:layout_marginTop="20dp"
+            android:id="@+id/call_btn"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancel_appointment"
+            android:textSize="20sp"
+            android:id="@+id/cancel_appoint"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

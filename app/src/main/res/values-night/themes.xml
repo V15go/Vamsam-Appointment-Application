@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DoctorAppointment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FE740C</item>
+        <item name="colorPrimaryVariant">#FF6702</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FE7402</item>
+        <item name="colorSecondaryVariant">#FF6702</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="background">@drawable/night_bg</item>
+        <item name="android:windowBackground">@drawable/night_bg</item>
+
+    </style>
+</resources>

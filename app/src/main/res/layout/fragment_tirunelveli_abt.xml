@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tirunelveli_abt">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/tirun_bg"
+        android:layout_marginTop="50dp"
+
+
+        android:id="@+id/map_navigation_btn"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/map_navigation_btn"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/vamsam_fertility_research_centre"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/location1"
+                android:textColor="@color/orange"
+                android:layout_marginTop="20sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tiu"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/orange"
+
+                android:text="@string/contact_number"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/phone_number_navi"
+                android:text="@string/_91_93613_92939"
+                android:textSize="22sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="20sp"
+
+                android:textColor="@color/orange"
+                android:text="@string/website"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/website_navigation"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/www_vamsamfertilitycentre_com"
+                android:textSize="22sp" />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="20sp"
+                android:layout_gravity="center"
+                android:id="@+id/google_maps_cbe"
+                android:background="@drawable/google_maps_btn"
+                android:elevation="20dp"
+                android:textColor="@color/orange"
+
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/facebook"
+                    android:layout_gravity="center"
+                    android:background="@drawable/facebook_btn"
+                    android:elevation="20dp"
+                    android:textColor="@color/orange"
+
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/insta"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/instagram_btn"
+                    android:elevation="20dp"
+                    android:textColor="@color/orange"
+
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/phone"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/phone_btn"
+                    android:elevation="20dp"
+                    android:textColor="@color/orange"
+
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

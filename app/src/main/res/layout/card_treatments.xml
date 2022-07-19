@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="15sp"
+
+        app:cardCornerRadius="20sp"
+        android:elevation="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:src="@drawable/btton"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_of_treatment"
+                android:contentDescription="@string/treatments" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"
+                android:padding="8dp"
+                android:id="@+id/title_of_treatment"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black"
+                />
+
+    <TextView
+        android:layout_width="32dp"
+        android:id="@+id/btn_of_treatment"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btton"
+        />
+
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/desciption_of_treatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="8dp"
+                android:text="@string/decription"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".get_started">
+
+  
+
+    <ImageView
+        android:id="@+id/logo_v"
+        android:layout_width="357dp"
+        android:layout_height="74dp"
+        android:elevation="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+
+        android:layout_marginStart="73dp"
+
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo_main"
+        />
+
+    <ImageView
+        android:id="@+id/get_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_v"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/main_img"
+       />
+
+    <TextView
+        android:id="@+id/get_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_image"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="40dp"
+
+        android:text="@string/get_started"
+        android:textColor="#FE7402"
+        android:textSize="30sp"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_get_started_btn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_start"
+        android:background="@drawable/btn_selector"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15sp"
+
+
+
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/login"
+        android:textSize="24sp"
+       />
+
+    <Button
+        android:id="@+id/new_user_get_started_btn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_get_started_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/new_user"
+        android:textColor="#FE740C"
+        android:textSize="18sp"
+      />
+
+
+</RelativeLayout>

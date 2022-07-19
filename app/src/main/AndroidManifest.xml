@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doctorappointment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoctorAppointment">
+        <activity android:name=".admin_appointment_details"></activity>
+        <activity android:name=".ooty_appoint" />
+        <activity android:name=".tirunlveli_appoint" />
+        <activity android:name=".trichy_appoint" />
+        <activity android:name=".arakkonam_appoint" />
+        <activity android:name=".coimbatore_appoint" />
+        <activity android:name=".admin_main" />
+        <activity android:name=".Appointment_view_page" />
+        <activity android:name=".appointment_details_page" />
+        <activity android:name=".investigation_form" />
+        <activity android:name=".profile_page" />
+        <activity android:name=".settings_page" />
+        <activity android:name=".about_us_page" />
+        <activity android:name=".injection_form" />
+        <activity android:name=".scan_form" />
+        <activity android:name=".treatment_form" />
+        <activity android:name=".appointment_types" />
+        <activity android:name=".forgot_password_page" />
+        <activity android:name=".sign_up_page" />
+        <activity android:name=".login_page" />
+        <activity android:name=".get_started">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

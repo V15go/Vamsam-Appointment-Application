@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".treatment_form">
+
+
+
+    <TextView
+        android:id="@+id/top_treatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_design"
+        android:gravity="top"
+
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/treatment_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-black"
+        android:text="@string/treatments"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+
+
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="@+id/top_treatment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+    <ImageView
+        android:id="@+id/image_treatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/treatment_head"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/treatment_icon"
+        android:contentDescription="@string/injections_vaccine" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/top_treatment"
+    android:layout_marginTop="15sp"
+    android:layout_marginBottom="30dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_treatment"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:id="@+id/name_treatment"
+            android:background="@drawable/cutom_edittext"
+            android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+            android:drawablePadding="12dp"
+            android:text="@string/name"
+
+            android:ems="10"
+
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:padding="10dp"/>
+
+        <EditText
+
+            android:id="@+id/phone_treatment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/cutom_edittext"
+            android:drawableStart="@drawable/custom_phone"
+            android:drawablePadding="12dp"
+            android:ems="10"
+
+            android:hint="@string/phone_number"
+
+            android:inputType="phone"
+            android:lines="10"
+            android:padding="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/treatments"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:startIconDrawable="@drawable/ic_baseline_medical_services_24"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/treatment_option"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textColor="@color/orange"
+                android:enabled="false"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+
+            android:id="@+id/additional_info_treatment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/cutom_edittext"
+            android:drawableStart="@drawable/info_menu"
+            android:drawablePadding="12dp"
+            android:ems="10"
+
+            android:hint="@string/additional_info"
+
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:padding="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:startIconDrawable="@drawable/ic_baseline_person_pin_circle_24_focus"
+            android:layout_marginTop="10dp"
+            android:hint="@string/select_your_nearest_centre"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/select_doc_treatments"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textColor="@color/orange"
+                android:enabled="false"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <EditText
+            android:id="@+id/date_treatments"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+
+            android:background="@drawable/cutom_edittext"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:drawableStart="@drawable/custom_date"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:focusable="false"
+
+            android:focusableInTouchMode="false"
+
+            android:hint="@string/date"
+            android:inputType="text"
+            android:padding="10dp"
+            tools:ignore="TextFields" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+            android:layout_marginTop="10dp"
+            android:hint="@string/time_slot"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/time_slots_treatments"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textColor="@color/orange"
+                android:enabled="false"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/disclaimer"
+            />
+
+        <Button
+            android:id="@+id/fix_treatment_appoint"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="@string/fix_appointment"
+            android:background="@drawable/btn_selector"
+            android:layout_marginTop="20sp"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

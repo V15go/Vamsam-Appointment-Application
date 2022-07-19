@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scan_form">
+
+
+    <TextView
+        android:id="@+id/top_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_design"
+        android:gravity="top"
+
+        />
+
+
+    <TextView
+        android:id="@+id/scan_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+
+        android:fontFamily="sans-serif-black"
+        android:text="@string/scan"
+
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="15sp"
+        app:srcCompat="@drawable/ultrasound_icon"
+        android:contentDescription="@string/injections_vaccine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_scan"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:id="@+id/name_scan"
+            android:background="@drawable/cutom_edittext"
+            android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+            android:drawablePadding="12dp"
+            android:text="@string/name"
+
+            android:ems="10"
+
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:padding="10dp"/>
+
+        <EditText
+
+            android:id="@+id/phone_scan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/cutom_edittext"
+            android:drawableStart="@drawable/custom_phone"
+            android:drawablePadding="12dp"
+            android:ems="10"
+
+            android:hint="@string/phone_number"
+
+            android:inputType="phone"
+            android:lines="10"
+            android:padding="10dp"/>
+        <EditText
+
+            android:id="@+id/additional_info_scan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/cutom_edittext"
+            android:drawableStart="@drawable/info_menu"
+            android:drawablePadding="12dp"
+            android:ems="10"
+
+            android:hint="@string/additional_info"
+
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:padding="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:startIconDrawable="@drawable/ic_baseline_person_pin_circle_24_focus"
+            android:layout_marginTop="10dp"
+            android:hint="@string/select_your_nearest_centre"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/select_doc_scan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/orange"
+                android:enabled="false"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/date_scan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+
+            android:background="@drawable/cutom_edittext"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:drawableStart="@drawable/custom_date"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:focusable="false"
+
+            android:focusableInTouchMode="false"
+
+            android:hint="@string/date"
+            android:inputType="text"
+            android:padding="10dp"
+            tools:ignore="TextFields" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+            android:layout_marginTop="10dp"
+            android:hint="@string/time_slot"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/time_slots_scan"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textColor="@color/orange"
+                android:enabled="false"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/disclaimer"
+            />
+
+        <Button
+            android:id="@+id/fix_scan_appoint"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/fix_appointment"
+            android:background="@drawable/btn_selector"
+            android:layout_marginTop="20sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
